@@ -1,4 +1,4 @@
-FuzzyZeit Zwei
+Mäckesse Clock based on FuzzyZeit zwei 
 ==========
 
-German fuzzy time Pebble Watch Face for SDK 2.0
+German dialect  fuzzy time Pebble Watch Face based on Fuzzyzwit zwei

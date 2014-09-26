@@ -2,18 +2,18 @@
 #include "string.h"
 
 static const char* const STUNDEN[] = {
-  "zwölf",
+  "zwölle",
   "eins",
-  "zwei",
-  "drei",
-  "vier",
-  "fünf",
-  "sechs",
-  "sieben",
-  "acht",
-  "neun",
-  "zehn",
-  "elf"
+  "zweie",
+  "dreie",
+  "viere",
+  "fünne",
+  "sechse",
+  "sieve",
+  "achte",
+  "neine",
+  "zehne",
+  "elle"
 };
 
 static size_t append_string(char* buffer, const size_t length, const char* str) {
@@ -41,13 +41,13 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
       if (hours  < 5 || hours > 21) {
         remaining -= append_string(words, remaining, " nachts");
       } else if ( hours < 12) {
-        remaining -= append_string(words, remaining, " morgens");
+        remaining -= append_string(words, remaining, " am morje");
       } else if ( hours < 13) {
         remaining -= append_string(words, remaining, " mittags");
       } else if ( hours < 18) {
-        remaining -= append_string(words, remaining, " nach- mittags");
+        remaining -= append_string(words, remaining, " nach- de mittag");
       } else {
-        remaining -= append_string(words, remaining, " abends");
+        remaining -= append_string(words, remaining, " aam owend");
       }
     }
     return;
@@ -56,7 +56,7 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
   if (minutes <= 3) {
     remaining -= append_string(words, remaining, "kurz nach");
   } else if (minutes <= 8) {
-    remaining -= append_string(words, remaining, "fünf nach");
+    remaining -= append_string(words, remaining, "fünne nach");
   } else if (minutes <= 12) {
     remaining -= append_string(words, remaining, "zehn nach");
   } else if (minutes <= 17) {
@@ -64,15 +64,15 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
   } else if (minutes <= 22) {
     remaining -= append_string(words, remaining, "zwanzig nach");
   } else if (minutes <= 28) {
-    remaining -= append_string(words, remaining, "fünf vor halb");
+    remaining -= append_string(words, remaining, "fünne vor halber");
   } else if (minutes <= 29) {
-    remaining -= append_string(words, remaining, "kurz vor halb");
+    remaining -= append_string(words, remaining, "kurz vor halber");
   } else if (minutes <= 30) {
-    remaining -= append_string(words, remaining, "halb");
+    remaining -= append_string(words, remaining, "halber");
   } else if (minutes <= 32) {
-    remaining -= append_string(words, remaining, "kurz nach halb");
+    remaining -= append_string(words, remaining, "kurz nach halber");
   } else if (minutes <= 37) {
-    remaining -= append_string(words, remaining, "fünf nach halb");
+    remaining -= append_string(words, remaining, "fünne nach halber");
   } else if (minutes <= 43) {
     remaining -= append_string(words, remaining, "zwanzig vor");
   } else if (minutes <= 48) {
@@ -80,7 +80,7 @@ void fuzzy_time_to_words(int hours, int minutes, char* words, size_t length) {
   } else if (minutes <= 53) {
     remaining -= append_string(words, remaining, "zehn vor");
   } else if (minutes <= 57) {
-    remaining -= append_string(words, remaining, "fünf vor");
+    remaining -= append_string(words, remaining, "fünne vor");
   } else if (minutes <= 59) {
     remaining -= append_string(words, remaining, "kurz vor");
   }

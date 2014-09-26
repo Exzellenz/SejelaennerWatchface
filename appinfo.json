@@ -3,8 +3,8 @@
     "capabilities": [
         ""
     ],
-    "companyName": "Felix Rotthowe",
-    "longName": "Fuzzy Zeit",
+    "companyName": "Philipp Anderl",
+    "longName": "Maeckese Siegerland Uhr",
     "projectType": "native",
     "resources": {
         "media": [
@@ -21,7 +21,7 @@
             }
         ]
     },
-    "shortName": "Fuzzy Zeit",
+    "shortName": "MaeckeseClock",
     "uuid": "9c137cb9-b7e6-488e-b6bc-4dd0f7ff5dc0",
     "versionCode": 1,
     "versionLabel": "1.0",

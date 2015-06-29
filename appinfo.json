@@ -9,18 +9,20 @@
     "resources": {
         "media": [
             {
-                "file": "fonts/opensansl.ttf",
-                "name": "FONT_TEXTFONT_40",
-                "type": "font"
-            },
-            {
                 "file": "images/menu_icon_fuzzy_watch.png",
                 "menuIcon": true,
                 "name": "IMAGE_MENU_ICON",
                 "type": "png"
+            },
+            {
+                "compatibility": "2.7",
+                "file": "fonts/opensansl.ttf",
+                "name": "FONT_TEXTFONT_40",
+                "type": "font"
             }
         ]
     },
+    "sdkVersion": "2",
     "shortName": "MaeckeseClock",
     "uuid": "9c137cb9-b7e6-488e-b6bc-4dd0f7ff5dc0",
     "versionCode": 1,
